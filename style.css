@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #444;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 1em;
+}
+
+section {
+    background-color: #555;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.matches, .next-match, .standings, .canadian-table {
+    grid-column: span 1;
+}
+
+.players {
+    grid-column: span 3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #666;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.player-card {
+    text-align: center;
+}
+
+.player-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+a {
+    color: red;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #dddddda9;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2a2;
+    font-weight: bold;
+}
+
+
+.team-cell {
+    display: flex;
+    align-items: center; /* A logót és a csapatnevet egy magasságba igazítja */
+}
+
+.team-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Kör alakú logó */
+    object-fit: cover;
+    margin-right: 8px; /* A névtől való elválasztás */
+    border: none; /* Eltávolítja a körvonalat */
+}
+
+
+
